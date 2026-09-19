@@ -1,0 +1,97 @@
+/**
+ * ROFI Color Theme
+ *
+ * Fullscreen theme with switchable PREVIEW option.
+ * 
+ * User: Dave Davenport
+ * Copyright: Dave Davenport
+ */
+configuration {
+	modes: "drun";
+}
+
+
+* {
+	background-image: linear-gradient(black/100%);
+	background-color: transparent;
+	border: none;
+	text-color:       white;
+}
+
+window {
+	fullscreen:       true;
+	background-color: black/100%;
+	padding:          4em;
+	children:         [ wrap, listview-split];
+	spacing:          1em;
+}
+
+
+/** We add an extra child to this if PREVIEW=true */
+listview-split {
+  spacing: 0.4em;
+  children: [listview];
+}
+
+wrap {
+	expand: false;
+	orientation: vertical;
+	children: [ inputbar, message ];
+}
+
+icon-ib {
+	expand: false;
+	filename: "system-search";
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+	size: 1em;
+}
+inputbar {
+	spacing: 0.4em;
+	padding: 0.4em;
+	children: [ icon-ib, entry ];
+}
+entry {
+	placeholder: "Search";
+	placeholder-color: white;
+}
+message {
+	background-color: red/20%;
+	padding: 0.4em;
+	spacing: 0.4em;
+}
+
+listview {
+	orientation: horizontal;
+	scrollbar: false;
+	flow: horizontal;
+	fixed-columns: true;
+	columns: 5;
+	lines: 5;
+	spacing: 1.0em;
+}
+
+element {
+	orientation: vertical;
+	padding: 0.1em;
+
+  children: [element-icon, element-text ];
+}
+element-icon {
+	size: calc(((100% - 8em) / 7 ));
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
+element-text {
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+	padding: 0.2em;
+}
+
+element selected {
+	border-color: white;
+	border: 3px;
+	border-radius: 8px;
+}
+
+
