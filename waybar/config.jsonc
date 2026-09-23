@@ -182,7 +182,7 @@
 
 
 {	
-    "output": "eDP-1",
+    "output": "DP-3",
     "layer": "top", // Waybar at top layer
     "position": "bottom", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width

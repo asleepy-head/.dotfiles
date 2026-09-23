@@ -14,6 +14,8 @@ settings:
     global: smart
   colors.webpage.preferred_color_scheme:
     global: dark
+  content.javascript.clipboard:
+    https://github.com: access-paste
   content.mouse_lock:
     https://anikototv.to: true
   content.register_protocol_handler:
@@ -29,12 +31,12 @@ settings:
     global: https://start.duckduckgo.com/
   url.searchengines:
     global:
-      '!g': https://google.com/search?q={}
-      '!yt': https://www.youtube.com/results?search_query={}
       '!ani': https://anikototv.to/filter?keyword={}
-      '!pkgs': https://search.nixos.org/packages?channel=26.05&query={}
-      '!mynix': https://mynixos.com/search?q={}
+      '!g': https://google.com/search?q={}
       '!modr': https://modrinth.com/discover/mods?q={}
+      '!mynix': https://mynixos.com/search?q={}
+      '!pkgs': https://search.nixos.org/packages?channel=26.05&query={}
+      '!yt': https://www.youtube.com/results?search_query={}
       DEFAULT: https://duckduckgo.com/?q={}
   url.start_pages:
     global: https://start.duckduckgo.com

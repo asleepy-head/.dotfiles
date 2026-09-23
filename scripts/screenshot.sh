@@ -1,5 +1,5 @@
 # 1. Safely create the target directory for today's date
-TARGET_DIR="$HOME/Pictures/screenshots/$(date +'%Y-%m-%d')"
+TARGET_DIR="$HOME/mnt/Pictures/screenshots/$(date +'%Y-%m-%d')"
 mkdir -p "$TARGET_DIR"
 
 # 2. Run the screenshot pipeline

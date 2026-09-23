@@ -32,11 +32,19 @@ hl.config({
     decoration = {
 	rounding = 10,rounding_power = 2,
         shadow = {enabled = false,range = 10,render_power = 5,color = 0xee1a1a1a,},
-        blur = {enabled = true,size = 5,passes = 3,vibrancy = 0,special = true},
+        blur = {enabled = false,size = 5,passes = 3,vibrancy = 0,special = true},
       },
 --0.1696
     animations = {enabled = false,},
+    
+    binds = {
+        scroll_event_delay = 85, -- Fixes scroll freezing/passing to apps
+    },
+
+
 })
+    
+
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })

@@ -1,13 +1,13 @@
 
-require("variables&rules")
+require("variables")
 require("functions")
 require("/lookandfeel/lookandfeel")
 require("/lookandfeel/animations")
 require("binds/binds")
-require("binds/backend")
 require("binds/movewindow")
 require("binds/movefocus")
 
+require("workspaces/workspaces")
 require("workspaces/specialworkspaces/audiosettings")
 require("workspaces/specialworkspaces/browser")
 require("workspaces/specialworkspaces/email")

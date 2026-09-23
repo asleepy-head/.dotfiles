@@ -4,13 +4,11 @@
 
 hl.on("hyprland.start", function () 
     
-    --hl.exec_cmd("/home/$USER/.local/bin/mystartupscript")
-
     hl.exec_cmd("systemctl --user start hyprland-session.target")
-    hl.exec_cmd("/home/$USER/.local/bin/capslocknotify.sh")
+    hl.exec_cmd("/home/$USER/.config/.dotfiles/scripts/capslocknotify.sh")
         
     --focus monitor
-    hl.dsp.window.move({ monitor = "DP-2" })
+    hl.dsp.window.move({ monitor = "mon2" })
     
     hl.exec_cmd("waybar")
     hl.exec_cmd("awww-daemon")
